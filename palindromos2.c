@@ -6,7 +6,7 @@
 
 
 int isPalindrome(char str[], int left, int right){
-    return(left >= right)? :(str[left] == str[right]) &&isPalindrome(str, left + 1, right - 1);
+    return(left >= right) ?: (str[left] == str[right]) && isPalindrome(str, left + 1, right - 1);
 }
 
 int main(void){
